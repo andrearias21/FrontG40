@@ -1,6 +1,6 @@
 function getStatus(){
     $.ajax({
-        url:"http://191.88.233.19:8080/api/Reservation/report-status",
+        url:"http://192.9.242.114:8080/api/Reservation/report-status",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -15,7 +15,7 @@ function getFechas(){
     let dato2= $("#startDate2").val();
 
     $.ajax({
-        url:"http://191.88.233.19:8080/api/Reservation/report-dates/"+dato1+"/"+dato2,
+        url:"http://192.9.242.114:8080/api/Reservation/report-dates/"+dato1+"/"+dato2,
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -29,7 +29,7 @@ function getClientes(){
     let dato2= $("#startDate2").val();
 
     $.ajax({
-        url:"http://191.88.233.19:8080/api/Reservation/report-client/"+client,
+        url:"http://192.9.242.114:8080/api/Reservation/report-client/"+client,
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
