@@ -2,7 +2,7 @@
 
 function getCliente(){
     $.ajax({
-        url:"http://191.88.233.19:8080/api/Client/all",
+        url:"http://192.9.242.114:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -27,7 +27,7 @@ function postCliente(){
         };
 
         $.ajax({
-            url:"http://191.88.233.19:8080/api/Client/save",
+            url:"http://192.9.242.114:8080/api/Client/save",
             type:"POST",
             datatype:"JSON",
             contentType:"application/json; charset=utf-8",
